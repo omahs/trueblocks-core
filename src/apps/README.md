@@ -10,7 +10,7 @@ The following applications are open source and available at our git hub:
 
 - [**ethslurp**](ethslurp/README.md): This program pulls data from the http://etherscan.io APIs. It may be used to verify results from TrueBlocks, checking that they are consistent with Etherscan. Ultimately, this tool is incomplete in two ways: (1) it pulls data from a centralized source as opposed to a locally-running node, and (2) it ignores internal smart contract message calls.
 
-- [**grabABI**](grabABI/README.md): This is the basis of the `chifra` application. Given an Etheruem address, this tool first grabs an ABI from one of numerous sources (http://etherscan.io, ENS, etc.). It then parses the ABI and automatically writes the C++ source code necessary to build an Ethereum address monitor. `chifra` uses `grabABI` and `makeClass` extensively.
+- [**grabABI**](grabABI/README.md): This is the basis of the `chifra` application. Given an Ethereum address, this tool first grabs an ABI from one of numerous sources (http://etherscan.io, ENS, etc.). It then parses the ABI and automatically writes the C++ source code necessary to build an Ethereum address monitor. `chifra` uses `grabABI` and `makeClass` extensively.
 
 - [**makeClass**](makeClass/README.md): This tool is used by `grabABI` to write the actual C++ code generated during the `chifra` process. Many of the source files found in `etherlib` were generated automatically using this tool.
 
